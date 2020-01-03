@@ -37,6 +37,9 @@ header{
     color: #fafafa;
     text-decoration: none;
 }
+.bar-icon{
+    display: none;
+}
 .main-visual{
     width: 100%;
     height: 650px;
@@ -196,8 +199,12 @@ header{
 .contact-box h4{
     margin-bottom: 5px;
 }
-.mail-p{
+.mail-a{
     margin-bottom: 20px;
+}
+.SNS-images{
+    width: 190px;
+    margin: 0 auto;
 }
 .SNS-image{
     display: inline;
@@ -219,8 +226,24 @@ footer p{
 }
 
 @media screen and (max-width:767px){
+    header{
+        height: 50px;
+    }
     .header-main{
         width: 90%;
+    }
+    .logoImage{
+        height: 50px;
+    }
+    .header-nav{
+        display: none;
+    }
+    .bar-icon{
+        display: inline-block;
+        font-size: 40px;
+        color: white;
+        margin-top: 5px ;
+        float: right;
     }
     .main-visual{
         background-image: url(img/code.png);
@@ -228,17 +251,21 @@ footer p{
     .main-visual-lText{
         width: 90%;
         font-size: 40px;
+        margin: 0 auto;
     }
     .main-visual-sText{
         width: 90%;
         font-size: 18px;
+        margin: 0 auto;
     }
     /*portfolio*/
     .mTitle{
         width: 90%;
+        margin: 0 auto;
     }
     .content-text{
         width: 90%;
+        margin: 0 auto;
     }
     .portfolio-img-parent{
         width: 300px;
@@ -254,8 +281,62 @@ footer p{
         display: none;
     }
     /*feature*/
-    .feature-box{
+    .feature{
         width: 90%;
         float: none;
+    }
+    .feature-box{
+        
+        margin: 0 auto;
+        float: none;
+        padding-top: 10px;
+    }
+    .feature-box:nth-child(3){
+        margin: 0 auto;
+    }
+    /*profile*/
+    .profile-box-parent{
+        width: 90%;
+
+    }
+    .profile-box{
+        width: 100%;
+    }
+    .profile-box:last-child{
+        margin-top:20px;
+    }
+    .profile-box h4{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .profile-box p{
+        text-align: center;
+    }
+    /*contact*/
+    .contact{
+        width: 90%;
+
+    }
+    .contact-box{
+        width: auto;
+        float: none;
+    }
+    .contact-box-sub:last-child{
+        margin-top: 20px;
+    }
+    .contact-box-sub{
+        margin: 0 auto;
+    }
+    .contact-box-sub h4{
+        text-align: center;
+    }
+    .contact-box-sub p{
+        text-align: center;
+    }
+    .SNS-images{
+        width: 166px;
+    }
+    .SNS-image{
+        margin-right: 8px;
     }
 }
