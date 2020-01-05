@@ -202,12 +202,9 @@ header{
 .mail-a{
     margin-bottom: 20px;
 }
-.SNS-images{
-    width: 190px;
-    margin: 0 auto;
-}
+
 .SNS-image{
-    display: inline;
+    display: inline-block;
     font-size: 50px;
     margin-right: 20px;
 }
@@ -333,9 +330,7 @@ footer p{
     .contact-box-sub p{
         text-align: center;
     }
-    .SNS-images{
-        width: 166px;
-    }
+    
     .SNS-image{
         margin-right: 8px;
     }
